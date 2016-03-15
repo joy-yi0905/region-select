@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>地市选择</title>
+	<style>
+	p{margin-bottom: 20px;}
+	</style>
+</head>
+
+<body>
+
+<div class="regions-select">
+	<p>regionsSelect：数据结构冗余</p>
+	<p>
+		<select name="" class="region-provice"><option value="-1">省份</option></select>
+		<select name="" class="region-city"><option value="-1">城市</option></select>
+		<select name="" class="region-county"><option value="-1">地区</option></select>
+		<button class="show-region">显示选择区域</button>
+	</p>
+</div>
+
+<div class="new-regions-select">
+	<p>newRegionsSelect：数据简洁直观，省-地-市</p>
+	<p>
+		<select name="" class="region-provice"><option value="-1">省份</option></select>
+		<select name="" class="region-city"><option value="-1">城市</option></select>
+		<select name="" class="region-county"><option value="-1">地区</option></select>
+		<button class="show-region">显示选择区域</button>
+	</p>
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/regions-data.js"></script>
+<script type="text/javascript" src="js/regions.js"></script>
+
+</body>
+
+</html>
