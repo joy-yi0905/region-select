@@ -21,6 +21,10 @@ function regionsSelect() {
     // 省选择
     regionProvice.bind( "change" , function(){
         pIndex = $(this).prop("selectedIndex") - 1;
+        
+        if (pIndex === -1) {
+            return;
+        }
 
         tempRegionCityStr = "<option value='-1'>城市</option>";
 
@@ -35,6 +39,10 @@ function regionsSelect() {
     // 市选择
     regionCity.bind( "change" , function(){
         cIndex = $(this).prop("selectedIndex") - 1;
+        
+        if (cIndex === -1) {
+            return;
+        }
 
         tempRegionCountyStr = "<option value='-1'>地区</option>";
 
